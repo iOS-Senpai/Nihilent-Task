@@ -94,9 +94,13 @@
 		C2791B392A68EB8D009D0446 /* Nihilent Task */ = {
 			isa = PBXGroup;
 			children = (
-				C2791B3A2A68EB8D009D0446 /* Nihilent_TaskApp.swift */,
-				C2791B3C2A68EB8D009D0446 /* ContentView.swift */,
-				C2791B3E2A68EB90009D0446 /* Assets.xcassets */,
+				C2791B6A2A68EBDA009D0446 /* Main */,
+				C2791B642A68EBA0009D0446 /* Model */,
+				C2791B662A68EBAB009D0446 /* View */,
+				C2791B652A68EBA7009D0446 /* ViewModel */,
+				C2791B672A68EBB9009D0446 /* Service Layer */,
+				C2791B682A68EBC1009D0446 /* Common */,
+				C2791B692A68EBCE009D0446 /* Resources */,
 				C2791B402A68EB90009D0446 /* Preview Content */,
 			);
 			path = "Nihilent Task";
@@ -125,6 +129,58 @@
 				C2791B572A68EB90009D0446 /* Nihilent_TaskUITestsLaunchTests.swift */,
 			);
 			path = "Nihilent TaskUITests";
+			sourceTree = "<group>";
+		};
+		C2791B642A68EBA0009D0446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2791B652A68EBA7009D0446 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2791B662A68EBAB009D0446 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2791B3C2A68EB8D009D0446 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2791B672A68EBB9009D0446 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		C2791B682A68EBC1009D0446 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C2791B692A68EBCE009D0446 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2791B3E2A68EB90009D0446 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2791B6A2A68EBDA009D0446 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C2791B3A2A68EB8D009D0446 /* Nihilent_TaskApp.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
