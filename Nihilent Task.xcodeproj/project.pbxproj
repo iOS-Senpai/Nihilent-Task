@@ -18,6 +18,12 @@
 		C2791B702A68F014009D0446 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B6F2A68F014009D0446 /* ProductView.swift */; };
 		C2791B722A68F023009D0446 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B712A68F023009D0446 /* FavoriteView.swift */; };
 		C2791B742A68F067009D0446 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B732A68F067009D0446 /* ProductDetailView.swift */; };
+		C2791B762A68F14A009D0446 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B752A68F14A009D0446 /* ProductModel.swift */; };
+		C2791B782A68F299009D0446 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B772A68F299009D0446 /* ProductViewModel.swift */; };
+		C2791B7A2A68F370009D0446 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B792A68F370009D0446 /* Service.swift */; };
+		C2791B7C2A690474009D0446 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B7B2A690474009D0446 /* EndPoint.swift */; };
+		C2791B7E2A692734009D0446 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B7D2A692734009D0446 /* AsyncImage.swift */; };
+		C2791B802A69372E009D0446 /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B7F2A69372E009D0446 /* Data+Decode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		C2791B6F2A68F014009D0446 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		C2791B712A68F023009D0446 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		C2791B732A68F067009D0446 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		C2791B752A68F14A009D0446 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		C2791B772A68F299009D0446 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		C2791B792A68F370009D0446 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C2791B7B2A690474009D0446 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		C2791B7D2A692734009D0446 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		C2791B7F2A69372E009D0446 /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +154,7 @@
 		C2791B642A68EBA0009D0446 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C2791B752A68F14A009D0446 /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +162,7 @@
 		C2791B652A68EBA7009D0446 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C2791B772A68F299009D0446 /* ProductViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -167,6 +181,7 @@
 		C2791B672A68EBB9009D0446 /* Service Layer */ = {
 			isa = PBXGroup;
 			children = (
+				C2791B792A68F370009D0446 /* Service.swift */,
 			);
 			path = "Service Layer";
 			sourceTree = "<group>";
@@ -175,6 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				C2791B6D2A68EF6D009D0446 /* SFSymbols.swift */,
+				C2791B7B2A690474009D0446 /* EndPoint.swift */,
+				C2791B7D2A692734009D0446 /* AsyncImage.swift */,
+				C2791B7F2A69372E009D0446 /* Data+Decode.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -326,10 +344,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2791B702A68F014009D0446 /* ProductView.swift in Sources */,
+				C2791B802A69372E009D0446 /* Data+Decode.swift in Sources */,
 				C2791B6E2A68EF6D009D0446 /* SFSymbols.swift in Sources */,
+				C2791B7C2A690474009D0446 /* EndPoint.swift in Sources */,
 				C2791B3B2A68EB8D009D0446 /* Nihilent_TaskApp.swift in Sources */,
 				C2791B722A68F023009D0446 /* FavoriteView.swift in Sources */,
+				C2791B7E2A692734009D0446 /* AsyncImage.swift in Sources */,
 				C2791B6C2A68ED39009D0446 /* MainTabView.swift in Sources */,
+				C2791B7A2A68F370009D0446 /* Service.swift in Sources */,
+				C2791B762A68F14A009D0446 /* ProductModel.swift in Sources */,
+				C2791B782A68F299009D0446 /* ProductViewModel.swift in Sources */,
 				C2791B742A68F067009D0446 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
