@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C2791B3B2A68EB8D009D0446 /* Nihilent_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B3A2A68EB8D009D0446 /* Nihilent_TaskApp.swift */; };
-		C2791B3D2A68EB8D009D0446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B3C2A68EB8D009D0446 /* ContentView.swift */; };
 		C2791B3F2A68EB90009D0446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2791B3E2A68EB90009D0446 /* Assets.xcassets */; };
 		C2791B422A68EB90009D0446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2791B412A68EB90009D0446 /* Preview Assets.xcassets */; };
 		C2791B4C2A68EB90009D0446 /* Nihilent_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B4B2A68EB90009D0446 /* Nihilent_TaskTests.swift */; };
 		C2791B562A68EB90009D0446 /* Nihilent_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B552A68EB90009D0446 /* Nihilent_TaskUITests.swift */; };
 		C2791B582A68EB90009D0446 /* Nihilent_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B572A68EB90009D0446 /* Nihilent_TaskUITestsLaunchTests.swift */; };
+		C2791B6C2A68ED39009D0446 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B6B2A68ED39009D0446 /* MainTabView.swift */; };
+		C2791B6E2A68EF6D009D0446 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B6D2A68EF6D009D0446 /* SFSymbols.swift */; };
+		C2791B702A68F014009D0446 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B6F2A68F014009D0446 /* ProductView.swift */; };
+		C2791B722A68F023009D0446 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B712A68F023009D0446 /* FavoriteView.swift */; };
+		C2791B742A68F067009D0446 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2791B732A68F067009D0446 /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		C2791B372A68EB8D009D0446 /* Nihilent Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nihilent Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2791B3A2A68EB8D009D0446 /* Nihilent_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nihilent_TaskApp.swift; sourceTree = "<group>"; };
-		C2791B3C2A68EB8D009D0446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2791B3E2A68EB90009D0446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2791B412A68EB90009D0446 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2791B472A68EB90009D0446 /* Nihilent TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nihilent TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		C2791B512A68EB90009D0446 /* Nihilent TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nihilent TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2791B552A68EB90009D0446 /* Nihilent_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nihilent_TaskUITests.swift; sourceTree = "<group>"; };
 		C2791B572A68EB90009D0446 /* Nihilent_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nihilent_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2791B6B2A68ED39009D0446 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C2791B6D2A68EF6D009D0446 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		C2791B6F2A68F014009D0446 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		C2791B712A68F023009D0446 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		C2791B732A68F067009D0446 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +156,10 @@
 		C2791B662A68EBAB009D0446 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C2791B3C2A68EB8D009D0446 /* ContentView.swift */,
+				C2791B6B2A68ED39009D0446 /* MainTabView.swift */,
+				C2791B6F2A68F014009D0446 /* ProductView.swift */,
+				C2791B712A68F023009D0446 /* FavoriteView.swift */,
+				C2791B732A68F067009D0446 /* ProductDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 		C2791B682A68EBC1009D0446 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C2791B6D2A68EF6D009D0446 /* SFSymbols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -313,8 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2791B3D2A68EB8D009D0446 /* ContentView.swift in Sources */,
+				C2791B702A68F014009D0446 /* ProductView.swift in Sources */,
+				C2791B6E2A68EF6D009D0446 /* SFSymbols.swift in Sources */,
 				C2791B3B2A68EB8D009D0446 /* Nihilent_TaskApp.swift in Sources */,
+				C2791B722A68F023009D0446 /* FavoriteView.swift in Sources */,
+				C2791B6C2A68ED39009D0446 /* MainTabView.swift in Sources */,
+				C2791B742A68F067009D0446 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +497,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

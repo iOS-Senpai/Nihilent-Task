@@ -2,7 +2,7 @@
 //  Nihilent_TaskApp.swift
 //  Nihilent Task
 //
-//  Created by AB020QU on 2023/07/20.
+//  Created by Pradeep Kumar on 2023/07/20.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct Nihilent_TaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
