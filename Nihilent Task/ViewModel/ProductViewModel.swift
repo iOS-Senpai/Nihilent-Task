@@ -22,18 +22,22 @@ final class ProductViewModel: ObservableObject {
     
     // MARK: - Private Properties
     
-    private let service: Service?
+    private weak var service: Service?
+    private static let ReferenceKey = "\(ProductViewModel.self)"
+    private var serviceReference = [String: Service?]()
     private var isLoading = false
     
     // MARK: - Init
     
     init(service: Service) {
         self.service = service
+        serviceReference[Self.ReferenceKey] = self.service  /** This we are storing in a lookup table beacuse service has been declared as weak. It will dealloc immediately when defined scope ends. To prevent potential memory leaks*/
     }
     
     // MARK: - Public
     
     func fetchProducts(completion: @escaping (ProductViewModel.State) -> Void = { _ in }) {
+        let service = serviceReference.values.first?.flatMap { $0 }
         service?.request(with: EndPoint.PRODUCTS_URL, method: .get) { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -53,7 +57,8 @@ final class ProductViewModel: ObservableObject {
     }
     
     deinit {
-        print("Instance have been deallocated....")
+        serviceReference[Self.ReferenceKey] = nil
+        print("Instance have been deallocated.....")
     }
 }
 

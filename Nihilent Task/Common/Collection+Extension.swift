@@ -15,8 +15,7 @@ extension Collection where Element == FetchedResults<FavoriteProduct>.Element {
                     id: $0.id ?? "",
                     imageURL: $0.imageURL ?? "",
                     ratingCount: $0.rating,
-                    productPrice: $0.price ?? "",
-                    isFavorite: $0.isFavorite)
+                    productPrice: $0.price ?? "")
         }.removeDuplicates()
     }
 }

@@ -32,9 +32,25 @@ extension MainDispatchQueueDecorator {
         if Thread.isMainThread {
             action()
         } else {
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+                guard let _ = self else { return }
                 action()
             }
         }
+    }
+}
+
+class WeakReferenceVirtualProxy<T: AnyObject> {
+    
+    private weak var object: T?
+    
+    init(_ object: T) {
+        self.object = object
+    }
+}
+
+extension WeakReferenceVirtualProxy: Service where T: Service {
+    func request(with url: URLConveritble, method: HTTPMethod, completion: @escaping (Result<Data, NError>) -> Void) {
+        object?.request(with: url, method: method, completion: completion)
     }
 }

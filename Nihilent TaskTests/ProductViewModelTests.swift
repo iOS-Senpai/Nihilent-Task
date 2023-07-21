@@ -95,7 +95,9 @@ final class ProductViewModelTests: XCTestCase {
     }
 }
 
-extension Product {
+// MARK: - Private
+
+private extension Product {
     static var mockProducts: [Product] {
         return [
             Product(title: "Diamond",
@@ -162,4 +164,3 @@ private extension ProductViewModelTests {
         }
     }
 }
-

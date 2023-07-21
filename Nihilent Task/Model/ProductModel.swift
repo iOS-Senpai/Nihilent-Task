@@ -53,7 +53,6 @@ struct Product: Hashable, Equatable {
     let imageURL: String
     let ratingCount: Double
     let productPrice: String
-    var isFavorite = Bool.random()
 }
 
 /*
