@@ -148,13 +148,11 @@ private extension ProductViewModelTests {
         }
         
         func request(with url: URLConveritble, method: HTTPMethod, completion: @escaping (Service.Result) -> Void) {
-            print(type(of: completion))
             messages.append((url, completion))
         }
         
         func toCompleteWithSuccess(data: Data, at index: Int = 0) {
             messages[index].completion(.success(data))
-            print(type(of: messages[index]))
             onCompletion?()
         }
         
