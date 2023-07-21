@@ -27,29 +27,25 @@ struct ProductView: View {
                 case let .success(products):
                     List {
                         ForEach(products, id:\.id) { product in
-                            Text(product.title)
+                            NavigationLink {
+                                ProductDetailView(product: product)
+                            } label: {
+                                ProductRow(product: product)
+                                    .listRowInsets(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
+                            }
                         }
                     }
+                    .listStyle(.plain)
                 case let .failure(reason: error):
                     Text(error.localizedDescription)
                 }
             }
+            .onAppear {
+                vm.fetchProducts()
+            }
             .navigationBarTitle("Products", displayMode: .large)
         }
-        .onAppear {
-            vm.fetchProducts()
-        }
-    }
-}
-
-struct ProductRow: View {
-    
-    let product: Product
-    
-    var body: some View {
-        HStack {
-            
-        }
+        .padding(.trailing, -32)
     }
 }
 

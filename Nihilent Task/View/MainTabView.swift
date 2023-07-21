@@ -33,6 +33,8 @@ struct MainTabView: View {
                 }
                 .tag(TabSelectionState.favorites)
         }
+        .loadFavorites()
+        .accentColor(.red)
     }
 }
 
